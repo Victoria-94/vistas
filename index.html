@@ -1,45 +1,82 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-  </head>
+    <style>
+        .configurable-image0 {
+            width: 1500px; /* Ajusta el tamaño según tus necesidades */
+            height: auto; /* Mantiene la proporción de la imagen */
+        }
+        .section {
+            display: none; /* Oculta todas las secciones por defecto */
+        }
+        .active {
+            display: block; /* Muestra la sección activa */
+        }
+    </style>
+</head>
 <body>
-  <style>
-    .configurable-image0 {
-      width: 1500px; /* Ajusta el tamaño según tus necesidades */
-      height: auto; /* Mantiene la proporción de la imagen */
-    }
-  </style>
-
-
 <div id="container">
-<header > 
-        <button class="btn">PROBLEMATICA</button>
-        <button class="btn">JUSTIFICACION</button>
-        <button class="btn">OBJETIVO GENERAL</button>
-        <button class="btn">OBJETIVOS ESPECIFICOS</button>
-        <button class="btn">METODOLOGIA</button>
-        <button class="btn">RESULTADOS</button>
-        <button class="btn">CONCLUSIONES</button>
-        <button class="btn">RECOMENDACIONES</button>
-        <button class="btn">ANEXOS</button>
- </header>
-<section>
-  <body>
-    <img src="ASSETS/1.png" alt="Slide1" class="configurable-image0"> 
-</body>
-<div class=""></div>
-</article>
-
-</section>
-
+    <header>
+      
+        <button class="btn" onclick="showSection('INICIO')">PROBLEMATICA</button>
+        <button class="btn" onclick="showSection('problematica')">PROBLEMATICA</button>
+        <button class="btn" onclick="showSection('justificacion')">JUSTIFICACION</button>
+        <button class="btn" onclick="showSection('objetivo-general')">OBJETIVO GENERAL</button>
+        <button class="btn" onclick="showSection('objetivos-especificos')">OBJETIVOS ESPECIFICOS</button>
+        <button class="btn" onclick="showSection('metodologia')">METODOLOGIA</button>
+        <button class="btn" onclick="showSection('resultados')">RESULTADOS</button>
+        <button class="btn" onclick="showSection('conclusiones')">CONCLUSIONES</button>
+        <button class="btn" onclick="showSection('recomendaciones')">RECOMENDACIONES</button>
+        <button class="btn" onclick="showSection('anexos')">ANEXOS</button>
+    </header>
+    <section id="content">
+        <div id="problematica" class="section">
+            <img src="ASSETS/2.png" alt="Slide2" class="configurable-image2">
+        </div>
+        <div id="justificacion" class="section">
+            <img src="ASSETS/3.png" alt="Slide2" class="configurable-image0">
+        </div>
+        <div id="objetivo-general" class="section">
+            <img src="ASSETS/4.png" alt="Slide3" class="configurable-image0">
+        </div>
+        <div id="objetivos-especificos" class="section">
+            <img src="ASSETS/5.png" alt="Slide4" class="configurable-image0">
+        </div>
+        <div id="metodologia" class="section">
+            <img src="ASSETS/6.png" alt="Slide5" class="configurable-image0">
+        </div>
+        <div id="resultados" class="section">
+            <img src="ASSETS/7.png" alt="Slide6" class="configurable-image0">
+        </div>
+        <div id="conclusiones" class="section">
+            <img src="ASSETS/8.png" alt="Slide7" class="configurable-image0">
+        </div>
+        <div id="recomendaciones" class="section">
+            <img src="ASSETS/9.png" alt="Slide8" class="configurable-image0">
+        </div>
+        <div id="anexos" class="section">
+            <img src="ASSETS/9.png" alt="Slide9" class="configurable-image0">
+        </div>
+    </section>
 </div>
+
+<script>
+    function showSection(sectionId) {
+        // Oculta todas las secciones
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => section.classList.remove('active'));
+
+        // Muestra la sección seleccionada
+        const activeSection = document.getElementById(sectionId);
+        if (activeSection) {
+            activeSection.classList.add('active');
+        }
+    }
+
+    // Muestra la primera sección por defecto
+    showSection('INICIO');
+</script>
 </body>
 </html>
-
-
-
-
