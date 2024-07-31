@@ -1,31 +1,6 @@
-body{
-    background-color: blue;
-    font-family: 'Times New Roman', Times, serif;
+.configurable-image0 {
+    width: 1500%; /* La imagen ocupará el 50% del ancho del contenedor padre */
+    height: auto;
   }
-  #container{
-    width: 100px;
-    margin: 0px auto;
-    border: 1px solid rgb(239, 239, 25);
-
-}
-header{
-    background: rgb(202, 40, 40);
-    height: 100px;
-    width: 100px;
-    margin: 0px;
-    text-align: center;
-    line-height: 100px;
-    float: left;
-}
-article{
-    color: rgb(30, 139, 234);
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-color: 1px solid green;
-}
-button{
-    width: 100px;
-    margin: 0px auto;
-    border: 1px solid rgb(239, 239, 25);
-}
+  
+  

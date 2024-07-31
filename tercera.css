@@ -1,5 +1,6 @@
-header{
-    background: black;
-    width: 10px;
-    height: 100px;
-}
+.configurable-image3 {
+    width: 1500%; /* La imagen ocupará el 50% del ancho del contenedor padre */
+    height: auto;
+  }
+  
+  
